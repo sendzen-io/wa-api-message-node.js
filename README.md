@@ -6,24 +6,24 @@
 
 A powerful TypeScript SDK for sending WhatsApp messages through the [SendZen API](https://api.sendzen.io). Built for developers who want to integrate WhatsApp Business messaging into their applications with ease.
 
-## ✨ Features
+## Features
 
-- 🚀 **Simple API** - Clean, intuitive interface for all message types
-- 📱 **Complete WhatsApp Support** - Text, images, documents, videos, audio, interactive messages, and templates
-- 🎯 **Template Management** - Advanced template message support with dynamic content
-- 🔒 **Type Safety** - Full TypeScript support with comprehensive type definitions
-- ⚡ **Performance** - Optimized for high-volume messaging
-- 🛡️ **Validation** - Built-in validation for phone numbers, language codes, and message formats
-- 🔄 **Error Handling** - Robust error handling with detailed error messages
-- 📊 **Request Logging** - Built-in request payload logging for debugging
+- **Simple API** - Clean, intuitive interface for all message types
+- **Complete WhatsApp Support** - Text, images, documents, videos, audio, interactive messages, and templates
+- **Template Management** - Advanced template message support with dynamic content
+- **Type Safety** - Full TypeScript support with comprehensive type definitions
+- **Performance** - Optimized for high-volume messaging
+- **Validation** - Built-in validation for phone numbers, language codes, and message formats
+- **Error Handling** - Robust error handling with detailed error messages
+- **Request Logging** - Built-in request payload logging for debugging
 
-## 📦 Installation
+## Installation
 
 ```bash
 npm install wa-api-message-node-js
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ```typescript
 import { WaMessageApi } from 'wa-api-message-node-js';
@@ -43,7 +43,7 @@ const response = await waApi.whatsapp.sendTextMessage({
 console.log('Message sent:', response.data);
 ```
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Configuration](#configuration)
 - [Message Types](#message-types)
@@ -55,7 +55,7 @@ console.log('Message sent:', response.data);
 - [Error Handling](#error-handling)
 - [TypeScript Support](#typescript-support)
 
-## ⚙️ Configuration
+## Configuration
 
 ```typescript
 const waApi = new WaMessageApi({
@@ -95,7 +95,7 @@ const waApi = new WaMessageApi({
 | `enableErrorLogging` | `boolean` | `false` | Enable error logging (auto-enabled if `logs` includes `'error'`) |
 | `enableDebugLogging` | `boolean` | `false` | Enable debug logging (auto-enabled if `logs` includes `'debug'`) |
 
-## 💬 Message Types
+## Message Types
 
 ### Text Messages
 
@@ -249,7 +249,7 @@ await waApi.whatsapp.sendInteractiveMessageWithDocumentHeader({
 
 Template messages are pre-approved message formats that can include dynamic content. They're essential for business communications and marketing.
 
-#### ⚠️ Important: When to Use Components
+#### Important: When to Use Components
 
 **Only use components when your template has dynamic values (placeholders like `{{name}}`, `{{order_id}}`, etc.).**
 
@@ -381,7 +381,7 @@ await waApi.whatsapp.template.sendTemplateMessage({
   - Copy code buttons cannot be combined with phone/URL buttons
   - Maximum 1 URL button and 1 phone button per template
 
-## 🔧 Advanced Features
+## Advanced Features
 
 ### Batch Sending
 
@@ -480,7 +480,7 @@ Data: {
 }
 ```
 
-## 🚨 Error Handling
+## Error Handling
 
 ```typescript
 try {
@@ -514,7 +514,7 @@ try {
 | Invalid API key | 403 | API key is invalid or expired | Check your API key |
 | Template components mismatch | 400 | Components don't match template | Verify template structure |
 
-## 📝 TypeScript Support
+## TypeScript Support
 
 The SDK is fully typed with comprehensive TypeScript definitions:
 
@@ -543,7 +543,7 @@ const message: TextMessage = {
 const response: ApiResponse<MessageResponse> = await waApi.whatsapp.sendMessage(message);
 ```
 
-## 🧪 Testing
+## Testing
 
 ```typescript
 // Test your setup
@@ -569,7 +569,7 @@ const debugApi = new WaMessageApi({
 });
 ```
 
-## 🛠️ Development
+## Development
 
 ```bash
 # Install dependencies
@@ -588,28 +588,28 @@ npm run lint
 npm run dev
 ```
 
-## 📄 License
+## License
 
 MIT
 
-## 🆘 Support
+## Support
 
-- 📧 **Email**: milan@sendzen.io
-- 🐛 **Issues**: [GitHub Issues](https://github.com/sendzen-io/wa-message-api.js/issues)
-- 📖 **Documentation**: [SendZen API Docs](https://sendzen.io/docs)
+- **Email**: milan@sendzen.io
+- **Issues**: [GitHub Issues](https://github.com/sendzen-io/wa-message-api.js/issues)
+- **Documentation**: [SendZen API Docs](https://sendzen.io/docs)
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions to WA API Message Node.JS! Here's how you can contribute:
 
-### 📋 Prerequisites
+### Prerequisites
 
 - Node.js (v18 or higher)
 - npm or yarn
 - Git
 - A GitHub account
 
-### 🚀 Getting Started
+### Getting Started
 
 #### 1. Fork the Repository
 
@@ -651,7 +651,7 @@ git checkout -b feature/your-feature-name
 git checkout -b fix/issue-description
 ```
 
-### 💻 Making Changes
+### Making Changes
 
 #### 1. Make Your Changes
 
@@ -692,7 +692,7 @@ git commit -m "feat: add new feature description"
 - `test:` for adding tests
 - `chore:` for maintenance tasks
 
-### 🔄 Submitting Changes
+### Submitting Changes
 
 #### 1. Push to Your Fork
 
@@ -738,14 +738,13 @@ Brief description of the changes
 - [ ] New and existing unit tests pass locally with my changes
 ```
 
-### 🔍 Review Process
+### Review Process
 
-1. **Automated Checks**: GitHub Actions will run tests and linting
-2. **Code Review**: Maintainers will review your code
-3. **Feedback**: Address any feedback or requested changes
-4. **Approval**: Once approved, your PR will be merged
+1. **Code Review**: Maintainers will review your code
+2. **Feedback**: Address any feedback or requested changes
+3. **Approval**: Once approved, your PR will be merged
 
-### 🐛 Reporting Issues
+### Reporting Issues
 
 If you find a bug or want to suggest a feature:
 
@@ -757,7 +756,7 @@ If you find a bug or want to suggest a feature:
    - Expected vs actual behavior
    - Environment details (Node.js version, OS, etc.)
 
-### 📚 Development Guidelines
+### Development Guidelines
 
 #### Code Style
 - Follow existing code patterns
@@ -775,7 +774,7 @@ If you find a bug or want to suggest a feature:
 - Add JSDoc comments for new methods
 - Update type definitions if needed
 
-### 🎯 Areas for Contribution
+### Areas for Contribution
 
 - **Bug Fixes**: Fix reported issues
 - **New Features**: Add new message types or functionality
@@ -784,12 +783,12 @@ If you find a bug or want to suggest a feature:
 - **Testing**: Add more test coverage
 - **Examples**: Create usage examples
 
-### ❓ Need Help?
+### Need Help?
 
 - **Issues**: Ask questions in GitHub issues
 - **Email**: Contact milan@sendzen.io for direct support
 
-### 🏆 Recognition
+### Recognition
 
 Contributors will be:
 - Listed in the project's contributors section
