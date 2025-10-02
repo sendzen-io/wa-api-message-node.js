@@ -1,0 +1,60 @@
+{
+  "name": "wa-api-message-node-js",
+  "version": "1.0.0",
+  "description": "TypeScript SDK for sending WhatsApp messages via SendZen.io API",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rimraf dist",
+    "prepublishOnly": "npm run clean && npm run build",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix"
+  },
+  "keywords": [
+    "sdk",
+    "typescript",
+    "whatsapp",
+    "messaging",
+    "sendzen",
+    "api",
+    "wa-message",
+    "whatsapp-api"
+  ],
+  "author": {
+    "name": "SendZen.io",
+    "email": "milan@sendzen.io",
+    "url": "https://sendzen.io"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.0.0",
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "jest": "^29.0.0",
+    "rimraf": "^5.0.0",
+    "ts-jest": "^29.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.6.0"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sendzen-io/wa-message-api.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sendzen-io/wa-message-api.js/issues"
+  },
+  "homepage": "https://github.com/sendzen-io/wa-message-api.js#readme"
+}
