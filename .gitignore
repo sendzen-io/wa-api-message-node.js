@@ -9,6 +9,10 @@ dist/
 build/
 *.tsbuildinfo
 
+# NPM package files
+*.tgz
+*.tar.gz
+
 # Environment variables
 .env
 .env.local
